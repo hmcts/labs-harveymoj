@@ -8,6 +8,6 @@ services:
         - http_proxy
         - https_proxy
         - no_proxy
-    image: hmctssbox.azurecr.io/labs/harveymoj
+    image: hmctsprod.azurecr.io/labs/harveymoj
     ports:
       - $SERVER_PORT:$SERVER_PORT
