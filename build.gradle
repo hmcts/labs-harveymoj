@@ -34,13 +34,13 @@ pmd {
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(25)
+    languageVersion = JavaLanguageVersion.of(21)
   }
 }
 
 checkstyle {
   toolVersion = '13.9.0'
-  configFile = new File(rootDir, "checkstyle.xml")
+  configFile = new File(rootDir, "config/checkstyle/checkstyle.xml")
   maxWarnings = 0
 }
 
