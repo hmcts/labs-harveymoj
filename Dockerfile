@@ -8,5 +8,7 @@ FROM hmctssbox.azurecr.io/base/java${PLATFORM}:21-distroless
 COPY lib/applicationinsights.json /opt/app/
 COPY build/libs/labs-harveymoj.jar /opt/app/
 
+USER 65532:65532
+
 EXPOSE 8080
 CMD [ "labs-harveymoj.jar" ]
